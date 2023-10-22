@@ -1,0 +1,40 @@
+.slide-banner {
+  position: relative;
+}
+
+.slide-banner img {
+  width: 100%;
+}
+
+.slide-banner .prev,
+.slide-banner .next {
+  position: absolute;
+  top: calc(50% - 20px);
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.slide-banner .prev {
+  left: 10px;
+}
+
+.slide-banner .next {
+  right: 10px;
+}
+
+.slide-banner .dots {
+  position: absolute;
+  bottom: 10px;
+  width: calc(100% - 20px);
+}
+
+.slide-banner .dot {
+  display: inline-block;
+}
+
+.slide-banner .dot.active {
+  display: inline-block;
+}

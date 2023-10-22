@@ -1,0 +1,45 @@
+body {
+  font-family: 'Raleway Dots', sans-serif;
+  font-size: 32px;
+  line-height: 50px;
+  text-align: justify;
+  letter-spacing: 0.1px;
+  background-color: #ffffff00;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee__inner {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee__inner span {
+  padding: 0 2rem;
+}
+
+.marquee__inner span::after {
+  content: " ";
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  background-color: #121212;
+}
